@@ -1,0 +1,356 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(255, 230, 204);
+    color: white;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 100%;
+}
+.line{
+    background-color: maroon;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.headar{
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.head-div{
+    width: 1200px;
+    margin: 0px auto;
+    background-color: white;
+}
+.head-div::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.img-container-div{
+    float: left;
+}
+.the-list{
+    list-style-type: none;
+}
+.right{
+    float: right;
+    height: 70px;
+    box-sizing: border-box;
+}
+li{ 
+    display: inline-block;
+    margin: 25px auto;
+}
+li a{
+    text-decoration: none;
+    color: maroon;
+    padding: 10px;
+}
+li a:hover{
+    background-color: maroon;
+    color: white;
+}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: linen;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color:  maroon;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover{
+    background-color:  orangered;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.fst-section-div{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(247, 216, 186);
+    color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.img-tag{
+    margin-left: 100px;
+    position: relative;
+    right: -30px;
+}
+.words{
+    font-size: 1.4em;
+}
+.words h1{
+    font-size: 3em;
+}
+.para1{
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+.btn{
+    background-color: white;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0px 8px 12px 0px rgba(7, 0, 0, 0.2);
+}
+.centralize-div-flex-items{  /*this class am using it as a function of subprogram to perform small code optimization */
+    display: flex;
+    align-items: center; /*this property is used to vertically align flex items */
+    justify-content: center; /*this property is used to horizontally align flex items */
+}
+.fst-section-div2{
+    height: 520px;
+    width: 100%;
+    background-color: rgb(207, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.word2 h5{
+    color: white;
+    margin-bottom: 10px;
+}
+.word2 h2{
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+.word2 .btn{
+    color: rgb(207, 0, 0);
+}
+.fst-section-div2 .img-tag{
+    margin-right: 150px;
+    position: relative;
+}
+.fst-section-div3{
+    height: 900px;
+    width: 100%;
+    background-color: rgb(247, 216, 186);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.words3 h2{
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.words3 .para1{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(236, 133, 133);
+    font-weight: 500;
+}
+.snd-section-div{ /*this snd-section is for the coulmns that are arranged in a row, they have backgroud of white */
+    color: blue;
+    width: 80%;
+    height: 600px;
+    margin: 50px 15px;
+    border-radius: 25px 25px ;
+    flex-direction: column;
+
+}
+.bg-details{
+    width: 100%;
+}
+.snd-section{ /*this snd-section is for the coulmns that are arranged in a row, they have backgroud of white */
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    width:35%;
+    height: 300px;
+    margin: 30px 15px;
+    border-radius: 25px 25px;
+    box-shadow: 0px 8px 12px 0px rgba(7, 0, 0, 0.2);
+}
+.snd-section p{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.bg-details2{
+    background: linear-gradient(to right, rgb(255, 95, 32),rgb(255, 95, 30))  
+}
+.snd-section:hover, .fst-column:hover {
+    background-color: orangered;
+    color: white;
+    width: 39%;
+    height: 320px;
+}
+.snd-section2{ /*this snd-section is for the coulmns that are arranged in a row, they have backgroud of white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:15%;
+    height: 300px;
+    margin: 30px 15px;
+}
+.snd-section2 h3{
+    color: white;
+    font-size: 2.3em;
+}
+.snd-section2 p{
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.bg-details3 {
+   background-color: rgb(250, 250, 251);
+   width: 100%;
+   height: 350px;
+}
+.snd-section2-fst-column h3{
+    color: orangered;
+    font-size: 2.3em;
+}
+.snd-section2-fst-column p{
+    color: orangered;
+    font-size: 1em;
+}
+.ft{
+    background-color:  maroon;
+    width: 100%;
+    height: 100px;
+}
+.btn-style{
+    text-decoration: none;
+    color: maroon;
+}
+.contactus-btn-style{
+    text-decoration: none;
+    color: orangered;
+}
+
+/*Here below contains the CSS For my about page*/
+.about-div{
+    width: 100%;
+    height: 150px;
+    background-color: maroon;
+    text-align: center;
+}
+.about-div h1{
+    line-height: 150px;
+    text-align: center;
+    font-size: 2em;
+}
+.about{
+    background-color: rgb(255, 230, 204);
+    color: maroon;
+}
+.who {
+    color: maroon;
+    font-size: 3.6em;
+    margin-bottom: 15px;
+}
+.about-para1{
+    color: maroon;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.sctt-section-div2{
+    height: 220px;
+    width: 100%;
+    background-color: rgb(255, 230, 204);
+    color: maroon;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.space{
+    padding: 0px 30px;
+}
+.space1{
+    padding: 10px 0px;
+}
+.skil h2{
+    margin-bottom: 10px;
+} 
+.skil{
+    padding: 5px 130px;
+}
+.form2{
+    margin-top: 30px;
+}
+
+/*Contact us CSS Style code*/
+.form-div{
+    height: 429px;
+    width: 100%;
+    padding: 50px 200px;
+    box-sizing: border-box;
+   
+}
+.label-div{
+    color: maroon;
+    margin: 10px 0px;
+}
+input[type=text]{
+    height: 40px;
+    width: 50%;
+    border: 2px lightgrey solid;
+    border-radius: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-div::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form-house{
+    width: 50%;
+    float: left;
+}
+.show{
+    float: left;
+}
+.size1{
+    width: 30vw;
+    height: 100px;
+    border: 2px lightgrey solid;
+    border-radius: 7px;
+    resize: none;
+}
+.body-style{
+    text-decoration: none;
+    color: white;
+    background-color: maroon;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 8px 12px 0px rgba(7, 0, 0, 0.2);
+    font-family: raleway;
+    font-weight: bold;
+}
+
