@@ -20,20 +20,19 @@
                         </div>
                         <nav class="right">
                                 <ul class="the-list">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li class="dropdown">
-                                                <a href="#" class="dropbtn">Services</a>
-                                                <div class="dropdown-content">
-                                                        <a href="#">Link 1</a>
-                                                        <a href="#">Link 2</a>
-                                                </div>
-                                        </li>
-                                        <li><a href="#">Contact us</a></li>
-                                        <li><a href="Signup.html">Portfolio</a></li>
-                                </ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="dropdown">
+                                        <a href="services.html" class="dropbtn">Services</a>
+                                        <div class="dropdown-content">
+                                                <a href="#">Link 1</a>
+                                                <a href="#">Link 2</a>
+                                        </div>
+                                      </li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="Signup.html">Portfolio</a></li>
+                            </ul>
                         </nav>
-
                 </div>
         </header>
 
@@ -45,13 +44,15 @@
 
         <section>
                 <div class="form-div">
-                        <form class="form-house" method="post">
+                        <!-- This is a secure email "https://formspree.io/f/mdorkqvv" , that protect my email from hackers 
+                        it a service offered by form spree, it offers form validation and incorrect emails-->
+                        <form class="form-house" action="https://formspree.io/f/mdorkqvv" method="post">
                                 <div class="form-row">
                                         <div class="label-div">
-                                                <label for="Firstname" class="label-height"> Firstname:</label>
+                                                <label for="Clientname" class="label-height"> Clientname:</label>
                                         </div>
                                         <div class="input-div">
-                                                <input type="text" placeholder="Firstname" id="Firstname" name="Firstname" required>
+                                                <input type="text" placeholder="Clientname" id="Clientname" name="Clientname" required>
                                         </div>
                                 </div>
 
@@ -60,20 +61,15 @@
                                                 <label for="Email" class="label-height"> Email:</label>
                                         </div>
                                         <div class="input-div">
-                                                <input type="text" placeholder="Email" id="Email" name="Email" required>
+                                                <input type="email" placeholder="Email" id="Email" name="Email" required>
                                         </div>
                                 </div>
-                        </form>
-
                         <div>
                                 <div class="show">
-                                        <form action="about.html" >
                                                 <div class="label-div">
                                                         <label for="Message" class="label-height"> Message</label>
                                                 </div>
-                                                <textarea class="size1" placeholder="Message" required>
-                                                </textarea>
-
+                                                <textarea class="size1" placeholder="Message" id="Message" name="Message" required></textarea>
                                                 <div >
                                                         <input type="submit" value="Submit" class="body-style"> 
                                                 </div>
@@ -85,10 +81,26 @@
 
         </section>
         <footer>
-                <div class="ft centralize-div-flex-items">
-                        <h2> &copy; Samuel Itoje 2023</h2>
+                <div class="ft">
+                            <div class="ft-inside-div">
+                                <h2 class="hj"> About me</h2>
+                                                <p class="resize"> We have tested a number of registry fix and clean utilities
+                                                    and present our top 3 list on our site for your convenience. </p>
+                                                <p class="resize1">  Copyright ©2023 All rights reserved | <strong>Samuel Itoje 2023</strong></p>
+                                 </div>
+                            
+                                    <div class="ftc-inside-div2">
+                                                <h2 class="hj"> Follow me</h2>
+                                                <p class="resize"> Let's get social👍... </p>
+                                                <p class="resize"> So follow us for more updates @ </p>
+                                                <div class="img-cont">
+                                                    <img src="fb.png" width="26px" alt="fb logo" class="spad1">
+                                                    <img src="instagam.png" width="30px" alt="instagam logo" class="spad">
+                                                    <img src="tw.png" width="30px" alt="Twitter logo" class="spad">
+                                                    <img src="wa.png" width="30px" alt="whatsapp logo" class="spad">
+                                                </div>
+                                    </div>
                 </div>
-        </footer>
+    </footer>
 </body>
-
 </html>
